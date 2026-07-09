@@ -6,7 +6,7 @@ import (
 )
 
 func Loading[T any](req func() T) (data T) {
-	fmt.Println("Loading...")
+	fmt.Println("Loading data, please wait...")
 
 	var wg sync.WaitGroup
 	defer wg.Wait()
