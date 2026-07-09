@@ -27,7 +27,11 @@ func main() {
 				if !strings.Contains(strings.ToLower(character.Name), query) {
 					continue
 				}
-				fmt.Printf("%s\n", character.Name)
+				fmt.Printf("Id: %v\n", character.Id)
+				fmt.Printf("Name: %s\n", character.Name)
+				fmt.Printf("Status: %s\n", character.Status)
+				fmt.Printf("Species: %s\n", character.Species)
+				fmt.Println()
 			}
 		}
 
